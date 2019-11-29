@@ -1,0 +1,345 @@
+
+body{
+    background-color: #151515 !important;
+}
+
+.fond_nav
+{
+    background-color : #202020;
+    width: 100%;
+    height : 90px;
+    display: flex;
+
+}
+.barHorizontale_01
+{
+    background-color: #151515 ;
+    height: 90px;
+    width:0.5px;
+    margin-left:33%;
+
+}
+
+.barHorizontale_02 {
+    background-color: #151515 ;
+    height: 90px;
+    width: 1px;
+
+}
+
+.bloc_img
+{
+
+    width:30%;
+    height :90px;
+    background-color: #202020;
+    display:block;
+}
+
+div p
+{
+    font-family: 'Bangers', cursive;;
+    font-size: 72px;
+    text-align: center;
+    color:red;
+}
+
+.div_search
+{
+    background-color: #202020;
+
+    width: 36.99%;
+    display: block;
+}
+
+ p :hover
+{
+    text-decoration: none;
+}
+
+
+/*
+img {
+    max-width:100%;
+    max-height:100%;
+    align-items: center;
+}*/
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input.site-search
+ {
+    width:40%;
+    height: 20px;
+    background-color: #202020;
+    border-style: none  none inset none;
+    color: white;
+
+    margin-left: 20% ;
+    margin-top:30px;
+}
+
+
+
+
+/*__________________________________________________MENU_BURGER____________________*/
+
+/*Menu burger*/
+
+/* Burger*/
+
+.menu-container {
+    position: fixed;
+    display: inherit;
+    cursor: pointer;
+    top: 70px;
+    left: 100px;
+    z-index: 12;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.menu-container .bars {
+    width: 60px;
+    height: 35px;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition:.4s;
+}
+
+
+.menu-container .bars span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 8px;
+}
+.menu-container .bars span:first-child {
+    margin-top: -4em;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+
+}
+
+/*div.bars
+{
+  position: fixed;
+  width:10px;
+  height:10px;
+  background-color:red;
+}*/
+.menu-container .bars span:nth-child(3) {
+    width: 65%;
+    -webkit-trans5tion: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.menu-container .bars .other-bar {
+    width: 2px;
+    height: 0;
+    background-color: #000;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -px;
+    -webkit-transition: height 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: height 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+    z-index: 10;
+}
+.menu-container.is-menu-open .bars {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+
+}
+.menu-container.is-menu-open .bars span:first-child {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+
+}
+.menu-container.is-menu-open .bars span:nth-child(3) {
+    width: 0;
+    -webkit-transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    background-color: #fff;
+}
+.menu-container.is-menu-open .bars .other-bar {
+    height: 60px;
+    -webkit-transition: height 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: height 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    background-color: #fff;
+}
+
+/* Burger ENDE */
+
+
+/* White Slide */
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 70%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Stay on top */
+    top: 0;
+    opacity: 1;
+    left: 0px;
+    background-color: #000; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 40px; /* Place content 60px from the top */
+    transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
+    transform: translateX(-100%);
+    transition-delay: .09s;
+}
+
+
+
+
+.over {
+
+    transform: translateX(-20%) skewX(-15deg);
+}
+
+/* White Slide ENDE*/
+
+/* Black Slide */
+.sidenav2 {
+    height: 100%; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Stay on top */
+    top: 0;
+    opacity: .9;
+    right: 0px;
+    background-color:#fff; /*Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.7s; /* 0.5 second transition effect to slide in the sidenav */
+    transform: translateX(100%);
+    transition-delay: 0s;
+
+
+}
+
+
+
+.over2 {
+
+    transform: translateX(55%) skewX(-15deg)
+}
+
+.logo-zentral img{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    filter:grayscale(100%);
+    cursor: pointer;
+}
+
+
+
+
+
+/* Black Slide ENDE*/
+
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 0px 80px 0px 80px;
+    text-decoration: none;
+    font-size: 3vw;
+    color: #fff;
+    display: block;
+    transition: 0.1s;
+    font-family:  'Bangers', cursive;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 25%;
+    height: auto;
+
+
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: red;
+
+    font-size: -webkit-xxx-large;
+
+
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0px;
+    margin-top: 180px;
+
+    z-index: 2;
+    transform: skewX(15deg);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+
+    display: block;
+    padding: 0px ;
+    margin-left: 0px;
+}
+.text{
+    width: 40%;
+    padding: 20px 80px 0px 140px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #adadad;
+    display: justify;
+    transition: 0.1s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 25%;
+
+    transform: skewX(15deg);
+
+}
+
+a:hover { color: #ffffff}
+
+/* The navigation menu links ENDE*/
+
+.logo-mobile {
+    display: inherit;
+    height: 190px;
+    width:auto;
+    top: 0px;
+    margin-left: auto;
+    transform: skewX(15deg);
+    margin-right: auto;}
+
