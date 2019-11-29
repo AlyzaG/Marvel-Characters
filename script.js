@@ -36,7 +36,7 @@ function getApiData() {
             console.log(img)
 
 
-            const nbSeries = data.series.items.length
+            const  nbSeries = data.series.items.length
 
             for (let i = 0; i < nbSeries; i++) {
                 const serie = data.series.items[i]
@@ -62,21 +62,6 @@ function getApiData() {
 
 getApiData()
 
-console.log(getApiData())
 
-/*
-function recherche()
-{
-    var t = document.getElementsByClassName(".text-name")[0].value; //le[0] permet de voir tous les élemnts de la liste (les enfants)
-    var tb = document.getElementsByClassName("ulaffiche")[0].children ;
 
-    for(i=0; i<tb.length;i++){
-        if (tb[i].textContent.toUpperCase() != t.toUpperCase() && t.toUpperCase()!= null && t.toUpperCase() != "" ){
-            $(tb[i]).hide();
-        }
-        else $(tb[i]).show();
-    }
-
-};
-*/
 
