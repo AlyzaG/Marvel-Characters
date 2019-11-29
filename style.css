@@ -372,6 +372,7 @@ a:hover { color: #ffffff}
     width: auto;
     height: 80px;
     margin-top:2%;
+    text-align: center;
 }
 
 .text-description{
@@ -379,4 +380,5 @@ a:hover { color: #ffffff}
     width: auto;
     height: 330px;
     margin-top:2%;
+    text-align: center;
 }
