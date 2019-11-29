@@ -32,6 +32,10 @@ function getApiData() {
             const series = data.series.items
             console.log(series)
 
+            const img = data.thumbnail.path.extension
+            console.log(img)
+
+
             const nbSeries = data.series.items.length
 
             for (let i = 0; i < nbSeries; i++) {
@@ -39,7 +43,12 @@ function getApiData() {
                 console.log(serie)
             }
 
-            //const img = data.data.results.path.extension.length
+
+            document.querySelector('jk').innerHTML = name
+            document.querySelector('j').innerHTML = description
+            document.querySelector('k').innerHTML = name
+
+
 
 
         }
