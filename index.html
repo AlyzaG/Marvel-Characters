@@ -2,22 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Marvel Characters</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
 </head>
 <body>
 
+<header>
+
+    <div class="fond_nav">
 
 
 
+        <div class = barHorizontale_01>
+
+    </div>
+        <div class="bloc_img">
+            <!--img src="https://logos-download.com/wp-content/uploads/2018/07/Marvel_logo_red.png"/-->
+            <a href="index.html"><p>MARVEL</p></a>
+        </div>
+
+        <div class = barHorizontale_02>
+
+        </div>
+
+        <div class="div_search">
+
+
+        <input type="search" class="site-search" id="site-search" name="q" aria-label="Search through site content" value="search">
+
+        <button>Search</button>
+
+        </div>
+
+
+
+
+
+    </div>
+
+<div class="menu-container">
+    <div class="bars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="other-bar"></div>
+    </div>
+</div>
+
+
+<div class="sidenav" id="sidenav">
+    <img class="logo-mobile" src="data:image/png;base64,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" title="Dragon" style="width:100px; height:auto;filter:grayscale(100%);margin-left:80%;" alt="icône_du_site">
+    <nav class="overlay-menu">
+        <ul>
+            <li id="1"><a href="../01_MULAN/accueil_mulan.php">HOME</a></li>
+            <li id="2"><a href="../01_MULAN/galerie.php">GALERIE</a></li>
+            <li id="4"><a href="../01_MULAN/contacter.php">CONTACT</a></li>
+            <li id="3"><a href="../blogPHP/accueil_blog.php" target="_blank">BLOG</a></li>
+
+
+        </ul>
+    </nav>
+    <div class="text">
+
+        <!--<p>Der Inhalt dieser E-Mail und moeglicher Anhaenge sind ausschliesslich fuer den bezeichneten Adressaten bestimmt.
+        Jede Form der Kenntnisnahme, Veroeffentlichung, Vervielfaeltigung oder Weitergabe des Inhalts dieser E-Mail und
+        moeglicher Anhaenge durch unberechtigte Dritte ist unzulaessig. Wir bitten Sie, sich mit dem Absender der E-Mail in
+        Verbindung zu setzen, falls Sie nicht der Adressat</p>-->
+
+    </div>
+
+
+</div>
+
+<div class="sidenav2" id="sidenav2">
+
+</div>
+
+</header>
 
 
 
 
 </body>
+<script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
