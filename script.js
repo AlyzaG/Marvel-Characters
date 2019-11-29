@@ -15,6 +15,7 @@ document.addEventListener("click", function () {
 });
 
 
+
 /*APPel À L'API*/
 
 function getApiData() {
@@ -60,3 +61,4 @@ function getApiData() {
 }
 
 getApiData()
+

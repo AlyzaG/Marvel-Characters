@@ -343,3 +343,40 @@ a:hover { color: #ffffff}
     transform: skewX(15deg);
     margin-right: auto;}
 
+.row{
+
+    width: auto;
+    height: 600px;
+}
+
+.col-sm-6-img{
+    background-color: #adadad;
+    width: 35%;
+    height: 450px;
+    margin-top: 40px;
+    margin-left: 90px;
+
+}
+
+.col-sm-6{
+    background-color: #adadad;
+    width: 11%;
+    height: 450px;
+    margin-top: 40px;
+    margin-left: 20px;
+
+}
+
+.text-name{
+    background-color: antiquewhite;
+    width: auto;
+    height: 80px;
+    margin-top:2%;
+}
+
+.text-description{
+    background-color: antiquewhite;
+    width: auto;
+    height: 330px;
+    margin-top:2%;
+}
