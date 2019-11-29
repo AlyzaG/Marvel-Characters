@@ -49,6 +49,7 @@ function getApiData() {
             document.querySelector('.col-sm-6-img').innerHTML = '<img src='+img+'>'
 
 
+            
         }
 
     }
