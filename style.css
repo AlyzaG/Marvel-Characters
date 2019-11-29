@@ -343,3 +343,8 @@ a:hover { color: #ffffff}
     transform: skewX(15deg);
     margin-right: auto;}
 
+.row{
+    background-color: #adadad;
+    width: auto;
+    height: 600px;
+}
