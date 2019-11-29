@@ -49,7 +49,7 @@ function getApiData() {
             document.querySelector('.col-sm-6-img').innerHTML = '<img src='+img+'>'
 
 
-            
+
         }
 
     }
@@ -57,11 +57,8 @@ function getApiData() {
 
 
 
-
-
-
-
     xhr.open('GET', 'https://gateway.marvel.com/v1/public/characters?name=spider-man&apikey=b7287f791e9cd24e6791c69c4eafbf76')
+    
     xhr.send()
 }
 
