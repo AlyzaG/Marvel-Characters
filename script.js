@@ -33,7 +33,7 @@ function getApiData() {
             const series = data.series.items
             console.log(series)
 
-            const img = data.thumbnail.path.extension
+            const img = data.thumbnail.path + '.jpg'
             console.log(img)
 
 
@@ -45,9 +45,9 @@ function getApiData() {
             }
 
 
-            document.querySelector('jk').innerHTML = name
-            document.querySelector('j').innerHTML = description
-            document.querySelector('k').innerHTML = name
+            document.querySelector('.text-name h1').innerHTML = name
+            document.querySelector('.text-description').innerHTML = description
+            document.querySelector('.col-sm-6-img img').innerHTML = img
 
 
 
